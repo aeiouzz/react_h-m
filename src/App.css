@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Pretendard-Regular";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+.menu_list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 20px 0 30px;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.menu_list ul {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu_list ul li {
+  margin-left: 20px;
+  transition: 3s;
+}
+
+.menu_list ul li:hover {
+  border-bottom: 1px solid #000;
+}
+
+
+.nav-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.login-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 20px;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.login-button span {
+  margin-left: 8px;
+}
+
+.input {
+  position: absolute;
+  top: -5px;
+  right: 10vw;
+  border-bottom: 2px solid #333;
+}
+
+.input input {
+  border: none;
+  outline: none;
+  margin-left: 5px;
+}
+
+.ProductCard {
+  margin: 0 5px;
+}
+
+.imgW div {
+  height: 40px;
+}
+
+.ProductCard img {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.ProductCard:hover img {
+  transform: scale(1.2);
+}
+
+.ProductCard .title {
+  font-weight: bold;
+}
+
+.ProductCard .imgW {
+  overflow: hidden;
+}
+
+.ProductCard .choice {
+  height: auto;
+}
+
+.product-img {
+  display: block;
+  margin-left: auto;
+}
+
+.product-img {
+  padding-left: 10vw !important;
+  box-sizing: border-box;
+}
+
+.product-desc div {
+  margin-bottom: 20px;
+}
+
+.product-title {
+  padding-top: 20px;
+  font-weight: 700;
 }
