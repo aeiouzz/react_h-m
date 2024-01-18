@@ -13,7 +13,7 @@ const ProductDetail = () => {
   const {id}= useParams();
   
   const getProductDetail=async()=>{
-    let url=`http://localhost:3004/products/${id}`;
+    let url=`https://my-json-server.typicode.com/aeiouzz/react_h-m/products?q=${searchQuery}`;
     let response=await fetch(url);
     let data=await response.json();
     setProduct(data)
